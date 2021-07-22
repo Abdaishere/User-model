@@ -1,0 +1,56 @@
+.errorlist{
+    color: red;
+}
+::marker{
+    color: red;
+}
+.card{
+    height: 100vh;
+    width: 800px;
+    margin: auto;
+}
+.divider-text {
+    position: relative;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.divider-text span {
+    padding: 7px;
+    font-size: 12px;
+    position: relative;   
+    z-index: 2;
+}
+.divider-text:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    top: 55%;
+    left: 0;
+    z-index: 1;
+}
+.inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+.inputfile + label {    
+    font-weight: 700;
+    color: #007bff;
+    background-color:transparent;
+    display: inline-block;
+    cursor: pointer;
+    padding-inline-end: 36%;    
+}
+.inputfile:focus + label,
+.inputfile + label:hover {
+    color:green;
+}
+.btn{
+    margin-top: 60px;    
+}
+
